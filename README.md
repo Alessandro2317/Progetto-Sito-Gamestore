@@ -1,31 +1,31 @@
-🎮 5D Game Store
-Un'applicazione web dinamica in HTML, CSS e PHP che permette di visualizzare un catalogo di videogiochi suddivisi per categorie. Il progetto presenta un design moderno in stile cyberpunk/neon.
+# 🎮 5D Game Store - Selezione Catalogo Videogiochi
 
-📂 Struttura del Progetto
-Il progetto è composto dai seguenti file:
+Applicazione web in **PHP** per la consultazione dinamica del catalogo videogiochi del 5D Game Store. Il sistema offre un pannello interattivo per filtrare e mostrare l'inventario dei giochi in tempo reale in base alla categoria scelta.
 
-index.html: La pagina principale che contiene il form per la selezione della categoria di giochi.
+---
 
-inserisci.html: Una pagina di interfaccia con un form predisposto per l'inserimento di nuovi giochi nel catalogo.
+## 🚀 Funzionalità
 
-gamestore.php: Il motore backend che riceve la categoria scelta, seleziona i dati corretti e genera dinamicamente la tabella dei giochi.
+L'applicazione permette di gestire i dati attraverso le seguenti operazioni fondamentali:
+* **Filtro Categoria:** Form nella Home Page che permette di selezionare una categoria specifica tramite pulsanti radio personalizzati.
+* **Visualizzazione Dinamica (Read):** Tabella riassuntiva nella pagina dei risultati che mostra l'elenco dei giochi filtrati con i relativi dettagli, inclusi il nome, la casa di sviluppo e il PEGI estratti tramite array associativi in PHP.
+* **Generazione Contenuti:** Sistema backend basato su costrutto `switch` per caricare e stampare a schermo solo i dati della categoria richiesta.
+* **Navigazione Integrata:** Pulsante di ritorno rapido per azzerare il filtro e ridefinire la ricerca tornando alla Home Page.
 
-style.css: Il foglio di stile globale che dona al sito un look accattivante con tonalità scure, dettagli rosa neon ed effetti glow.
+---
 
-🚀 Funzionalità
-Selezione per Categoria: Tramite dei pulsanti radio personalizzati nella Home, l'utente può scegliere tra le categorie Sport, FPS, Idle, Multiplayer, Indie e Avventura.
+## 🛠️ Tecnologie Utilizzate
 
-Generazione Dinamica: Il file PHP elabora la scelta tramite un costrutto switch ed estrae i dati da array associativi multidimensionali.
+* **Backend:** PHP 8.x (Gestione logica dei dati tramite array multidimensionali e switch-case)
+* **Database:** Hardcoded Array (Struttura dati locale integrata nello script PHP per simulare un archivio)
+* **Frontend:** HTML5, CSS3 (Layout responsivo con palette colori a tema cyberpunk/neon)
 
-Visualizzazione Dati: I giochi vengono mostrati in una tabella pulita e scannabile che include titolo, casa di sviluppo, classificazione PEGI e la copertina del gioco.
+---
 
-Form di Inserimento: È presente una pagina (inserisci.html) con i campi pronti (ID, nome, etam, link immagine, prezzo) per futuri sviluppi di salvataggio dati.
+## 📂 Struttura del Progetto
 
-🎨 Design e Stile
-Il file style.css applica una palette di colori coerente e d'impatto:
+* `index.html` - Dashboard principale con il form di selezione della categoria di gioco.
+* `gamestore.php` - Script backend per l'elaborazione, il filtro e la stampa della tabella dei giochi.
+* `style.css` - File di stile centralizzato per l'interfaccia grafica e gli effetti visivi.
 
-Sfondo: Scuro e uniforme (#2b1b47) per far risaltare gli elementi.
-
-Testi e Pulsanti: Colore rosa acceso (#ff6ec7) con ombreggiature ed effetti glow (text-shadow e box-shadow).
-
-Interattività: Animazioni fluide al passaggio del mouse (hover) sui pulsanti e sulle righe della tabella.
+---
